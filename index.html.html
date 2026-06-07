@@ -1,0 +1,2071 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0b1f3a" />
+  <meta name="color-scheme" content="light" />
+
+  <title>PARTNER OFFICE | Legalizacja pobytu, księgowość, kadry i płace</title>
+  <meta
+    name="description"
+    content="PARTNER OFFICE w Rzeszowie: legalizacja pobytu, księgowość, zakładanie działalności, kadry i płace. Kompleksowa obsługa cudzoziemców, przedsiębiorców i spółek w Polsce."
+  />
+  <meta
+    name="keywords"
+    content="PARTNER OFFICE, biuro księgowe Rzeszów, legalizacja pobytu, karta pobytu, księgowość, kadry i płace, JDG, spółka z o.o., cudzoziemcy w Polsce"
+  />
+  <meta name="author" content="PARTNER OFFICE" />
+  <meta name="robots" content="index, follow" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="PARTNER OFFICE | Legalizacja pobytu, księgowość, kadry i płace" />
+  <meta property="og:description" content="Kompleksowa obsługa cudzoziemców, przedsiębiorców i spółek w Polsce." />
+  <meta property="og:locale" content="pl_PL" />
+
+  <style>
+    /* =========================
+       GLOBAL DESIGN SYSTEM
+       ========================= */
+    :root {
+      --navy-950: #071527;
+      --navy-900: #0b1f3a;
+      --navy-850: #10294c;
+      --navy-800: #14345f;
+      --navy-700: #1a457d;
+      --blue-100: #eaf2ff;
+      --blue-50: #f6f9ff;
+      --gold-500: #c9a34e;
+      --gold-400: #d9bb6a;
+      --gold-100: #fff7df;
+      --white: #ffffff;
+      --ink: #142033;
+      --muted: #66758c;
+      --line: rgba(13, 38, 72, 0.12);
+      --shadow-soft: 0 20px 60px rgba(8, 30, 58, 0.12);
+      --shadow-card: 0 16px 40px rgba(8, 30, 58, 0.10);
+      --radius-xl: 28px;
+      --radius-lg: 22px;
+      --radius-md: 16px;
+      --container: 1160px;
+      --transition: 220ms ease;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at top left, rgba(201, 163, 78, 0.10), transparent 28rem),
+        linear-gradient(180deg, #ffffff 0%, #f7faff 46%, #ffffff 100%);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    body.menu-open {
+      overflow: hidden;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button,
+    input,
+    textarea,
+    select {
+      font: inherit;
+    }
+
+    button {
+      cursor: pointer;
+    }
+
+    img,
+    svg {
+      display: block;
+      max-width: 100%;
+    }
+
+    ::selection {
+      color: var(--white);
+      background: var(--navy-800);
+    }
+
+    .container {
+      width: min(100% - 40px, var(--container));
+      margin-inline: auto;
+    }
+
+    .section {
+      padding: 96px 0;
+      position: relative;
+    }
+
+    .section-header {
+      max-width: 780px;
+      margin: 0 auto 48px;
+      text-align: center;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 14px;
+      color: var(--gold-500);
+      font-size: 0.78rem;
+      font-weight: 800;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+    }
+
+    .eyebrow::before,
+    .eyebrow::after {
+      content: "";
+      width: 28px;
+      height: 1px;
+      background: currentColor;
+      opacity: 0.55;
+    }
+
+    h1,
+    h2,
+    h3,
+    p {
+      margin-top: 0;
+    }
+
+    h1 {
+      color: var(--white);
+      font-size: clamp(3.4rem, 8vw, 7.2rem);
+      line-height: 0.92;
+      letter-spacing: -0.07em;
+      margin-bottom: 22px;
+    }
+
+    h2 {
+      color: var(--navy-900);
+      font-size: clamp(2rem, 4vw, 3.1rem);
+      line-height: 1.05;
+      letter-spacing: -0.045em;
+      margin-bottom: 20px;
+    }
+
+    h3 {
+      color: var(--navy-900);
+      font-size: 1.2rem;
+      line-height: 1.25;
+      letter-spacing: -0.015em;
+      margin-bottom: 12px;
+    }
+
+    p {
+      color: var(--muted);
+      font-size: 1.03rem;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      min-height: 52px;
+      padding: 0 22px;
+      border: 1px solid transparent;
+      border-radius: 999px;
+      font-weight: 800;
+      letter-spacing: -0.01em;
+      transition:
+        transform var(--transition),
+        box-shadow var(--transition),
+        border-color var(--transition),
+        background var(--transition),
+        color var(--transition);
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+    }
+
+    .btn:focus-visible,
+    .nav-link:focus-visible,
+    .mobile-menu-btn:focus-visible,
+    .contact-toggle:focus-visible {
+      outline: 3px solid rgba(201, 163, 78, 0.45);
+      outline-offset: 4px;
+    }
+
+    .btn-primary {
+      color: var(--navy-950);
+      background: linear-gradient(135deg, #f4d986, var(--gold-500));
+      box-shadow: 0 16px 36px rgba(201, 163, 78, 0.30);
+    }
+
+    .btn-primary:hover {
+      box-shadow: 0 22px 48px rgba(201, 163, 78, 0.36);
+    }
+
+    .btn-secondary {
+      color: var(--white);
+      background: rgba(255, 255, 255, 0.10);
+      border-color: rgba(255, 255, 255, 0.28);
+      backdrop-filter: blur(10px);
+    }
+
+    .btn-secondary:hover {
+      background: rgba(255, 255, 255, 0.16);
+      border-color: rgba(255, 255, 255, 0.42);
+    }
+
+    .btn-outline {
+      color: var(--navy-900);
+      background: var(--white);
+      border-color: var(--line);
+      box-shadow: 0 12px 28px rgba(8, 30, 58, 0.08);
+    }
+
+    .btn-outline:hover {
+      border-color: rgba(201, 163, 78, 0.45);
+      box-shadow: 0 18px 40px rgba(8, 30, 58, 0.12);
+    }
+
+    .icon {
+      width: 24px;
+      height: 24px;
+      color: currentColor;
+      flex: 0 0 auto;
+    }
+
+    .icon-lg {
+      width: 34px;
+      height: 34px;
+    }
+
+    /* =========================
+       TOP NAVIGATION
+       ========================= */
+    .site-header {
+      position: fixed;
+      z-index: 50;
+      top: 0;
+      left: 0;
+      right: 0;
+      transition:
+        background var(--transition),
+        box-shadow var(--transition),
+        border-color var(--transition),
+        transform var(--transition);
+    }
+
+    .site-header.scrolled {
+      background: rgba(255, 255, 255, 0.88);
+      border-bottom: 1px solid var(--line);
+      box-shadow: 0 14px 38px rgba(8, 30, 58, 0.08);
+      backdrop-filter: blur(18px);
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      min-height: 78px;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      color: var(--white);
+      font-weight: 900;
+      letter-spacing: -0.03em;
+    }
+
+    .site-header.scrolled .brand {
+      color: var(--navy-900);
+    }
+
+    .brand-mark {
+      display: grid;
+      place-items: center;
+      width: 42px;
+      height: 42px;
+      border-radius: 14px;
+      color: var(--navy-950);
+      background: linear-gradient(135deg, #f8e6a9, var(--gold-500));
+      box-shadow: 0 12px 28px rgba(201, 163, 78, 0.25);
+    }
+
+    .brand-text {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.08;
+    }
+
+    .brand-name {
+      font-size: 1.05rem;
+    }
+
+    .brand-sub {
+      opacity: 0.76;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .nav-link {
+      color: rgba(255, 255, 255, 0.84);
+      padding: 10px 13px;
+      border-radius: 999px;
+      font-size: 0.94rem;
+      font-weight: 750;
+      transition:
+        color var(--transition),
+        background var(--transition);
+    }
+
+    .nav-link:hover {
+      color: var(--white);
+      background: rgba(255, 255, 255, 0.10);
+    }
+
+    .site-header.scrolled .nav-link {
+      color: var(--navy-800);
+    }
+
+    .site-header.scrolled .nav-link:hover {
+      color: var(--navy-950);
+      background: rgba(20, 52, 95, 0.08);
+    }
+
+    .nav-cta {
+      margin-left: 8px;
+      min-height: 42px;
+      padding: 0 16px;
+      color: var(--navy-950);
+      background: linear-gradient(135deg, #f4d986, var(--gold-500));
+      border-radius: 999px;
+      font-size: 0.92rem;
+      font-weight: 850;
+    }
+
+    .mobile-menu-btn {
+      display: none;
+      width: 46px;
+      height: 46px;
+      border: 1px solid rgba(255, 255, 255, 0.22);
+      border-radius: 14px;
+      color: var(--white);
+      background: rgba(255, 255, 255, 0.08);
+    }
+
+    .site-header.scrolled .mobile-menu-btn {
+      color: var(--navy-900);
+      border-color: var(--line);
+      background: var(--white);
+    }
+
+    .mobile-menu-btn span {
+      display: block;
+      width: 19px;
+      height: 2px;
+      margin: 5px auto;
+      border-radius: 999px;
+      background: currentColor;
+      transition: transform var(--transition), opacity var(--transition);
+    }
+
+    .mobile-menu-btn[aria-expanded="true"] span:nth-child(1) {
+      transform: translateY(7px) rotate(45deg);
+    }
+
+    .mobile-menu-btn[aria-expanded="true"] span:nth-child(2) {
+      opacity: 0;
+    }
+
+    .mobile-menu-btn[aria-expanded="true"] span:nth-child(3) {
+      transform: translateY(-7px) rotate(-45deg);
+    }
+
+    /* =========================
+       HERO SECTION
+       ========================= */
+    .hero {
+      position: relative;
+      min-height: 100svh;
+      display: grid;
+      align-items: center;
+      overflow: hidden;
+      padding: 130px 0 90px;
+      isolation: isolate;
+      background:
+        linear-gradient(135deg, rgba(7, 21, 39, 0.92), rgba(11, 31, 58, 0.88)),
+        radial-gradient(circle at 20% 15%, rgba(201, 163, 78, 0.34), transparent 26rem),
+        linear-gradient(135deg, #0b1f3a, #14345f 58%, #061222);
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: -2;
+      opacity: 0.30;
+      background-image:
+        linear-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.08) 1px, transparent 1px);
+      background-size: 58px 58px;
+      mask-image: linear-gradient(180deg, #000 0%, transparent 84%);
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: auto -12% -34% 42%;
+      height: 70%;
+      z-index: -1;
+      background:
+        radial-gradient(circle, rgba(217, 187, 106, 0.18), transparent 62%),
+        radial-gradient(circle at 65% 40%, rgba(255, 255, 255, 0.14), transparent 42%);
+      filter: blur(6px);
+    }
+
+    .hero-layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1.05fr) minmax(320px, 0.95fr);
+      gap: 60px;
+      align-items: center;
+    }
+
+    .hero-content {
+      max-width: 760px;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 24px;
+      padding: 9px 14px;
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      border-radius: 999px;
+      color: rgba(255, 255, 255, 0.92);
+      background: rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(12px);
+      font-size: 0.9rem;
+      font-weight: 760;
+    }
+
+    .hero-badge .dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 999px;
+      background: var(--gold-400);
+      box-shadow: 0 0 0 6px rgba(217, 187, 106, 0.14);
+    }
+
+    .hero-subtitle {
+      color: var(--gold-400);
+      font-size: clamp(1.18rem, 2.2vw, 1.72rem);
+      font-weight: 850;
+      letter-spacing: -0.03em;
+      margin-bottom: 18px;
+    }
+
+    .hero-description {
+      max-width: 690px;
+      color: rgba(255, 255, 255, 0.78);
+      font-size: clamp(1.06rem, 1.8vw, 1.28rem);
+      margin-bottom: 34px;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-bottom: 38px;
+    }
+
+    .hero-trust {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 12px;
+      max-width: 650px;
+    }
+
+    .trust-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      min-height: 76px;
+      padding: 14px;
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      border-radius: 18px;
+      color: rgba(255, 255, 255, 0.85);
+      background: rgba(255, 255, 255, 0.07);
+      backdrop-filter: blur(14px);
+    }
+
+    .trust-item strong {
+      display: block;
+      color: var(--white);
+      line-height: 1.15;
+      font-size: 0.94rem;
+    }
+
+    .trust-icon {
+      display: grid;
+      place-items: center;
+      width: 38px;
+      height: 38px;
+      flex: 0 0 auto;
+      border-radius: 13px;
+      color: var(--gold-400);
+      background: rgba(217, 187, 106, 0.12);
+    }
+
+    .hero-panel {
+      position: relative;
+      min-height: 560px;
+    }
+
+    .business-card {
+      position: relative;
+      margin-left: auto;
+      width: min(100%, 480px);
+      min-height: 540px;
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      border-radius: 34px;
+      overflow: hidden;
+      background:
+        linear-gradient(180deg, rgba(255, 255, 255, 0.18), rgba(255, 255, 255, 0.08)),
+        radial-gradient(circle at 80% 8%, rgba(217, 187, 106, 0.24), transparent 18rem);
+      box-shadow: 0 34px 90px rgba(0, 0, 0, 0.26);
+      backdrop-filter: blur(18px);
+    }
+
+    .business-card::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      opacity: 0.50;
+      background:
+        linear-gradient(135deg, transparent 0 32%, rgba(255, 255, 255, 0.13) 32% 33%, transparent 33%),
+        linear-gradient(45deg, transparent 0 55%, rgba(201, 163, 78, 0.20) 55% 56%, transparent 56%);
+    }
+
+    .business-card-top {
+      position: relative;
+      padding: 30px;
+      color: var(--white);
+    }
+
+    .business-card-title {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 32px;
+    }
+
+    .business-card-title span {
+      display: block;
+      color: rgba(255, 255, 255, 0.66);
+      font-size: 0.86rem;
+      font-weight: 750;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .business-card-title strong {
+      display: block;
+      font-size: 1.2rem;
+      letter-spacing: -0.025em;
+    }
+
+    .business-visual {
+      position: relative;
+      height: 284px;
+      border-radius: 26px;
+      overflow: hidden;
+      background:
+        linear-gradient(160deg, rgba(255, 255, 255, 0.94), rgba(234, 242, 255, 0.82)),
+        radial-gradient(circle at top right, rgba(201, 163, 78, 0.22), transparent 12rem);
+      box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.55);
+    }
+
+    .business-visual::before {
+      content: "";
+      position: absolute;
+      left: -14%;
+      bottom: -20%;
+      width: 78%;
+      height: 78%;
+      border-radius: 50%;
+      background: rgba(20, 52, 95, 0.08);
+    }
+
+    .business-visual svg {
+      position: absolute;
+      inset: 22px;
+      width: calc(100% - 44px);
+      height: calc(100% - 44px);
+    }
+
+    .panel-list {
+      display: grid;
+      gap: 12px;
+      margin-top: 20px;
+    }
+
+    .panel-row {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 13px 14px;
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      border-radius: 16px;
+      color: rgba(255, 255, 255, 0.88);
+      background: rgba(255, 255, 255, 0.07);
+    }
+
+    .panel-row span {
+      color: rgba(255, 255, 255, 0.66);
+      font-size: 0.82rem;
+    }
+
+    .floating-note {
+      position: absolute;
+      right: -18px;
+      bottom: 80px;
+      width: 212px;
+      padding: 18px;
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      border-radius: 22px;
+      color: var(--white);
+      background: rgba(255, 255, 255, 0.14);
+      box-shadow: 0 24px 58px rgba(0, 0, 0, 0.18);
+      backdrop-filter: blur(18px);
+      animation: floatNote 5.5s ease-in-out infinite;
+    }
+
+    .floating-note strong {
+      display: block;
+      margin-bottom: 5px;
+      color: var(--gold-400);
+      font-size: 1.55rem;
+      line-height: 1;
+    }
+
+    .floating-note span {
+      display: block;
+      color: rgba(255, 255, 255, 0.78);
+      font-size: 0.9rem;
+      font-weight: 700;
+    }
+
+    @keyframes floatNote {
+      0%,
+      100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-14px);
+      }
+    }
+
+    /* =========================
+       ABOUT SECTION
+       ========================= */
+    .about {
+      padding-top: 110px;
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 0.82fr 1.18fr;
+      gap: 48px;
+      align-items: center;
+    }
+
+    .about-card {
+      position: relative;
+      padding: 34px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius-xl);
+      background: var(--white);
+      box-shadow: var(--shadow-soft);
+      overflow: hidden;
+    }
+
+    .about-card::before {
+      content: "";
+      position: absolute;
+      inset: 0 0 auto auto;
+      width: 180px;
+      height: 180px;
+      border-radius: 0 0 0 100%;
+      background: rgba(201, 163, 78, 0.10);
+    }
+
+    .about-card-inner {
+      position: relative;
+      display: grid;
+      gap: 18px;
+    }
+
+    .metric {
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+      padding: 18px;
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      background: linear-gradient(180deg, #ffffff, #f8fbff);
+    }
+
+    .metric-icon {
+      display: grid;
+      place-items: center;
+      width: 48px;
+      height: 48px;
+      flex: 0 0 auto;
+      border-radius: 17px;
+      color: var(--gold-500);
+      background: var(--gold-100);
+    }
+
+    .metric strong {
+      display: block;
+      color: var(--navy-900);
+      font-size: 1rem;
+      line-height: 1.2;
+      margin-bottom: 4px;
+    }
+
+    .metric span {
+      display: block;
+      color: var(--muted);
+      font-size: 0.93rem;
+      line-height: 1.45;
+    }
+
+    .about-text p {
+      font-size: 1.12rem;
+      max-width: 670px;
+    }
+
+    .about-note {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      margin-top: 18px;
+      padding: 15px 18px;
+      border: 1px solid rgba(201, 163, 78, 0.32);
+      border-radius: 18px;
+      color: var(--navy-900);
+      background: linear-gradient(135deg, var(--gold-100), #ffffff);
+      font-weight: 800;
+    }
+
+    /* =========================
+       SERVICES SECTION
+       ========================= */
+    .services {
+      background:
+        linear-gradient(180deg, rgba(234, 242, 255, 0.80), rgba(255, 255, 255, 0.90)),
+        radial-gradient(circle at 90% 12%, rgba(201, 163, 78, 0.12), transparent 24rem);
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 20px;
+    }
+
+    .service-card {
+      position: relative;
+      min-height: 100%;
+      padding: 28px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius-lg);
+      background: rgba(255, 255, 255, 0.86);
+      box-shadow: var(--shadow-card);
+      overflow: hidden;
+      transition:
+        transform var(--transition),
+        box-shadow var(--transition),
+        border-color var(--transition);
+    }
+
+    .service-card::before {
+      content: "";
+      position: absolute;
+      inset: 0 0 auto 0;
+      height: 4px;
+      background: linear-gradient(90deg, var(--gold-500), rgba(201, 163, 78, 0.08));
+    }
+
+    .service-card:hover {
+      transform: translateY(-7px);
+      border-color: rgba(201, 163, 78, 0.36);
+      box-shadow: 0 24px 58px rgba(8, 30, 58, 0.14);
+    }
+
+    .service-icon {
+      display: grid;
+      place-items: center;
+      width: 58px;
+      height: 58px;
+      margin-bottom: 22px;
+      border-radius: 20px;
+      color: var(--navy-800);
+      background:
+        linear-gradient(135deg, #ffffff, var(--blue-100));
+      box-shadow: inset 0 0 0 1px rgba(20, 52, 95, 0.08);
+    }
+
+    .service-card ul {
+      margin: 18px 0 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .service-card li {
+      position: relative;
+      padding: 10px 0 10px 26px;
+      color: var(--muted);
+      border-top: 1px solid rgba(13, 38, 72, 0.08);
+      font-size: 0.96rem;
+    }
+
+    .service-card li::before {
+      content: "";
+      position: absolute;
+      top: 18px;
+      left: 2px;
+      width: 9px;
+      height: 9px;
+      border-radius: 999px;
+      background: var(--gold-500);
+      box-shadow: 0 0 0 5px rgba(201, 163, 78, 0.12);
+    }
+
+    /* =========================
+       WHY US SECTION
+       ========================= */
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .why-card {
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+      padding: 24px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius-lg);
+      background: var(--white);
+      box-shadow: 0 14px 34px rgba(8, 30, 58, 0.08);
+      transition:
+        transform var(--transition),
+        border-color var(--transition),
+        box-shadow var(--transition);
+    }
+
+    .why-card:hover {
+      transform: translateY(-5px);
+      border-color: rgba(201, 163, 78, 0.32);
+      box-shadow: 0 22px 46px rgba(8, 30, 58, 0.12);
+    }
+
+    .why-icon {
+      display: grid;
+      place-items: center;
+      width: 52px;
+      height: 52px;
+      flex: 0 0 auto;
+      border-radius: 18px;
+      color: var(--gold-500);
+      background: var(--gold-100);
+    }
+
+    .why-card p {
+      margin-bottom: 0;
+      font-size: 0.95rem;
+    }
+
+    /* =========================
+       CONTACT SECTION WITH HIDDEN DATA
+       ========================= */
+    .contact {
+      padding-bottom: 110px;
+      background:
+        linear-gradient(135deg, var(--navy-950), var(--navy-900) 58%, #0e2b53);
+      overflow: hidden;
+    }
+
+    .contact::before {
+      content: "";
+      position: absolute;
+      inset: -20% auto auto -12%;
+      width: 440px;
+      height: 440px;
+      border-radius: 999px;
+      background: rgba(201, 163, 78, 0.16);
+      filter: blur(18px);
+    }
+
+    .contact::after {
+      content: "";
+      position: absolute;
+      right: -12%;
+      bottom: -30%;
+      width: 520px;
+      height: 520px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.08);
+      filter: blur(28px);
+    }
+
+    .contact .section-header {
+      position: relative;
+      z-index: 1;
+    }
+
+    .contact h2,
+    .contact .section-header p {
+      color: var(--white);
+    }
+
+    .contact .section-header p {
+      color: rgba(255, 255, 255, 0.72);
+    }
+
+    .contact-shell {
+      position: relative;
+      z-index: 1;
+      max-width: 820px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .contact-toggle {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      min-height: 58px;
+      padding: 0 28px;
+      border: 0;
+      border-radius: 999px;
+      color: var(--navy-950);
+      background: linear-gradient(135deg, #f8e2a1, var(--gold-500));
+      box-shadow: 0 22px 50px rgba(201, 163, 78, 0.28);
+      font-weight: 900;
+      transition:
+        transform var(--transition),
+        box-shadow var(--transition);
+    }
+
+    .contact-toggle:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 28px 62px rgba(201, 163, 78, 0.34);
+    }
+
+    .contact-toggle .chevron {
+      transition: transform var(--transition);
+    }
+
+    .contact-toggle[aria-expanded="true"] .chevron {
+      transform: rotate(180deg);
+    }
+
+    .contact-panel {
+      display: grid;
+      grid-template-rows: 0fr;
+      transition: grid-template-rows 520ms cubic-bezier(.22, 1, .36, 1), margin-top 520ms cubic-bezier(.22, 1, .36, 1);
+    }
+
+    .contact-panel.open {
+      grid-template-rows: 1fr;
+      margin-top: 30px;
+    }
+
+    .contact-panel-inner {
+      min-height: 0;
+      overflow: hidden;
+    }
+
+    .contact-card {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 22px;
+      padding: 28px;
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      border-radius: 30px;
+      text-align: left;
+      background: rgba(255, 255, 255, 0.10);
+      box-shadow: 0 34px 80px rgba(0, 0, 0, 0.22);
+      backdrop-filter: blur(20px);
+      transform: translateY(18px);
+      opacity: 0;
+      transition:
+        transform 520ms cubic-bezier(.22, 1, .36, 1),
+        opacity 520ms cubic-bezier(.22, 1, .36, 1);
+    }
+
+    .contact-panel.open .contact-card {
+      transform: translateY(0);
+      opacity: 1;
+    }
+
+    .contact-card-main {
+      padding: 24px;
+      border-radius: 24px;
+      background: rgba(255, 255, 255, 0.92);
+    }
+
+    .contact-company {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 22px;
+      color: var(--navy-950);
+      font-size: 1.25rem;
+      font-weight: 950;
+      letter-spacing: -0.035em;
+    }
+
+    .contact-details {
+      display: grid;
+      gap: 16px;
+    }
+
+    .contact-detail {
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+      color: var(--muted);
+    }
+
+    .contact-detail strong {
+      display: block;
+      color: var(--navy-900);
+      margin-bottom: 2px;
+      font-size: 0.92rem;
+    }
+
+    .contact-detail a {
+      color: var(--navy-800);
+      font-weight: 800;
+    }
+
+    .contact-detail a:hover {
+      color: var(--gold-500);
+    }
+
+    .contact-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 24px;
+    }
+
+    .contact-card-side {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 24px;
+      border-radius: 24px;
+      color: var(--white);
+      background:
+        radial-gradient(circle at top right, rgba(201, 163, 78, 0.26), transparent 13rem),
+        linear-gradient(180deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.06));
+    }
+
+    .contact-card-side h3 {
+      color: var(--white);
+      font-size: 1.65rem;
+      margin-bottom: 10px;
+    }
+
+    .contact-card-side p {
+      color: rgba(255, 255, 255, 0.72);
+      margin-bottom: 0;
+    }
+
+    .contact-mini-list {
+      display: grid;
+      gap: 10px;
+      margin-top: 18px;
+    }
+
+    .contact-mini-list span {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      color: rgba(255, 255, 255, 0.86);
+      font-weight: 760;
+    }
+
+    .contact-mini-list span::before {
+      content: "";
+      width: 8px;
+      height: 8px;
+      border-radius: 999px;
+      background: var(--gold-400);
+    }
+
+    /* =========================
+       FOOTER
+       ========================= */
+    .footer {
+      padding: 30px 0;
+      color: rgba(255, 255, 255, 0.72);
+      background: #06111f;
+    }
+
+    .footer-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+
+    .footer strong {
+      color: var(--white);
+      letter-spacing: -0.02em;
+    }
+
+    .footer span {
+      font-size: 0.94rem;
+    }
+
+    /* =========================
+       SCROLL ANIMATIONS
+       ========================= */
+    .reveal {
+      opacity: 0;
+      transform: translateY(26px);
+      transition:
+        opacity 720ms ease,
+        transform 720ms ease;
+      transition-delay: var(--delay, 0ms);
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* =========================
+       RESPONSIVE DESIGN
+       ========================= */
+    @media (max-width: 1040px) {
+      .hero-layout,
+      .about-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-panel {
+        min-height: auto;
+      }
+
+      .business-card {
+        margin: 0;
+        width: 100%;
+      }
+
+      .floating-note {
+        right: 18px;
+      }
+
+      .services-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 860px) {
+      .section {
+        padding: 76px 0;
+      }
+
+      .nav-links {
+        position: fixed;
+        inset: 78px 18px auto 18px;
+        display: grid;
+        gap: 6px;
+        padding: 18px;
+        border: 1px solid var(--line);
+        border-radius: 24px;
+        background: rgba(255, 255, 255, 0.96);
+        box-shadow: 0 24px 62px rgba(8, 30, 58, 0.18);
+        backdrop-filter: blur(18px);
+        opacity: 0;
+        transform: translateY(-14px);
+        pointer-events: none;
+        transition:
+          opacity var(--transition),
+          transform var(--transition);
+      }
+
+      .nav-links.open {
+        opacity: 1;
+        transform: translateY(0);
+        pointer-events: auto;
+      }
+
+      .nav-link,
+      .site-header.scrolled .nav-link {
+        color: var(--navy-900);
+        padding: 13px 14px;
+      }
+
+      .nav-cta {
+        margin-left: 0;
+        text-align: center;
+        padding: 13px 16px;
+      }
+
+      .mobile-menu-btn {
+        display: inline-block;
+      }
+
+      .hero {
+        padding-top: 118px;
+      }
+
+      .hero-trust {
+        grid-template-columns: 1fr;
+      }
+
+      .why-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .contact-card {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .container {
+        width: min(100% - 28px, var(--container));
+      }
+
+      h1 {
+        font-size: clamp(3rem, 16vw, 4.8rem);
+      }
+
+      .hero-actions {
+        display: grid;
+      }
+
+      .btn {
+        width: 100%;
+      }
+
+      .business-card {
+        min-height: auto;
+        border-radius: 26px;
+      }
+
+      .business-card-top {
+        padding: 20px;
+      }
+
+      .business-visual {
+        height: 220px;
+      }
+
+      .floating-note {
+        position: relative;
+        right: auto;
+        bottom: auto;
+        width: 100%;
+        margin-top: 16px;
+      }
+
+      .services-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .about-card,
+      .service-card,
+      .contact-card-main,
+      .contact-card-side {
+        padding: 22px;
+      }
+
+      .contact-card {
+        padding: 18px;
+        border-radius: 24px;
+      }
+
+      .footer-inner {
+        display: grid;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *,
+      *::before,
+      *::after {
+        scroll-behavior: auto !important;
+        animation-duration: 0.001ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.001ms !important;
+      }
+
+      .reveal {
+        opacity: 1;
+        transform: none;
+      }
+    }
+  </style>
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "AccountingService",
+      "name": "PARTNER OFFICE",
+      "description": "Legalizacja pobytu, księgowość, zakładanie działalności oraz obsługa kadrowo-płacowa.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "ul. Jana Matejki 6 lok. 2",
+        "postalCode": "35-064",
+        "addressLocality": "Rzeszów",
+        "addressCountry": "PL"
+      },
+      "telephone": "+48690982599",
+      "email": "biuro@partneroffice.com.pl",
+      "areaServed": "PL",
+      "taxID": "9452184109"
+    }
+  </script>
+</head>
+
+<body>
+  <!-- =========================
+       SVG ICON DEFINITIONS
+       ========================= -->
+  <svg aria-hidden="true" focusable="false" style="position:absolute;width:0;height:0;overflow:hidden">
+    <symbol id="icon-scale" viewBox="0 0 24 24">
+      <path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M12 3v18M7 6h10M5 9l-3 6h6L5 9Zm14 0-3 6h6l-3-6ZM8 21h8"/>
+    </symbol>
+    <symbol id="icon-briefcase" viewBox="0 0 24 24">
+      <path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M9 7V5.8A1.8 1.8 0 0 1 10.8 4h2.4A1.8 1.8 0 0 1 15 5.8V7m-9 0h12a2 2 0 0 1 2 2v8.5a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2Zm7 5h-2m-7-1.5c2.7 1.7 5.3 2.5 8 2.5s5.3-.8 8-2.5"/>
+    </symbol>
+    <symbol id="icon-calculator" viewBox="0 0 24 24">
+      <path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M7 3h10a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2Zm2.5 4h5M9 11h.01M12 11h.01M15 11h.01M9 14h.01M12 14h.01M15 14h.01M9 17h.01M12 17h.01M15 17h.01"/>
+    </symbol>
+    <symbol id="icon-users" viewBox="0 0 24 24">
+      <path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M16 20v-1.5a3.5 3.5 0 0 0-3.5-3.5h-5A3.5 3.5 0 0 0 4 18.5V20m8-12a4 4 0 1 1-8 0 4 4 0 0 1 8 0Zm8 12v-1.2a3 3 0 0 0-2.3-2.9m-1.9-10.7a3.5 3.5 0 0 1 0 6.6"/>
+    </symbol>
+    <symbol id="icon-shield" viewBox="0 0 24 24">
+      <path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M12 3 5 6v5.2c0 4.5 2.9 8.5 7 9.8 4.1-1.3 7-5.3 7-9.8V6l-7-3Zm-3 9 2 2 4-4"/>
+    </symbol>
+    <symbol id="icon-clock" viewBox="0 0 24 24">
+      <path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18Zm0-13v5l3 2"/>
+    </symbol>
+    <symbol id="icon-file" viewBox="0 0 24 24">
+      <path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M7 3h6l4 4v14H7V3Zm6 0v5h5M9.5 12h5M9.5 15h5M9.5 18h3"/>
+    </symbol>
+    <symbol id="icon-building" viewBox="0 0 24 24">
+      <path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M4 21h16M6 21V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v16M9 7h.01M12 7h.01M15 7h.01M9 11h.01M12 11h.01M15 11h.01M9 15h.01M12 15h.01M15 15h.01"/>
+    </symbol>
+    <symbol id="icon-mail" viewBox="0 0 24 24">
+      <path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M4 6h16v12H4V6Zm0 1 8 6 8-6"/>
+    </symbol>
+    <symbol id="icon-phone" viewBox="0 0 24 24">
+      <path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M7 4 5 6c-.7.7-.7 1.8 0 2.5l2.2 2.2a15.8 15.8 0 0 0 6.1 6.1l2.2 2.2c.7.7 1.8.7 2.5 0l2-2c.4-.4.5-1 .3-1.5l-1.4-3.1c-.2-.5-.8-.8-1.3-.7l-2.5.5a11.4 11.4 0 0 1-5.3-5.3l.5-2.5c.1-.5-.2-1.1-.7-1.3L8.5 3.7C8 3.5 7.4 3.6 7 4Z"/>
+    </symbol>
+    <symbol id="icon-location" viewBox="0 0 24 24">
+      <path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M12 21s7-5.5 7-11a7 7 0 1 0-14 0c0 5.5 7 11 7 11Zm0-8.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z"/>
+    </symbol>
+    <symbol id="icon-chevron" viewBox="0 0 24 24">
+      <path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="m6 9 6 6 6-6"/>
+    </symbol>
+    <symbol id="icon-check" viewBox="0 0 24 24">
+      <path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="m5 12 4 4L19 6"/>
+    </symbol>
+  </svg>
+
+  <!-- =========================
+       HEADER / NAVIGATION
+       ========================= -->
+  <header class="site-header" id="siteHeader">
+    <div class="container nav">
+      <a class="brand" href="#top" aria-label="PARTNER OFFICE - strona główna">
+        <span class="brand-mark" aria-hidden="true">
+          <svg class="icon"><use href="#icon-scale"></use></svg>
+        </span>
+        <span class="brand-text">
+          <span class="brand-name" data-i18n="brand.name">PARTNER OFFICE</span>
+          <span class="brand-sub" data-i18n="brand.sub">Business support</span>
+        </span>
+      </a>
+
+      <nav class="nav-links" id="navLinks" aria-label="Główna nawigacja">
+        <a class="nav-link" href="#about" data-i18n="nav.about">O nas</a>
+        <a class="nav-link" href="#services" data-i18n="nav.services">Usługi</a>
+        <a class="nav-link" href="#why" data-i18n="nav.why">Dlaczego my</a>
+        <a class="nav-link" href="#contact" data-i18n="nav.contact">Kontakt</a>
+        <a class="nav-cta" href="#contact" data-i18n="nav.cta">Skontaktuj się</a>
+      </nav>
+
+      <button class="mobile-menu-btn" id="mobileMenuBtn" type="button" aria-label="Otwórz menu" aria-controls="navLinks" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- =========================
+         HERO SECTION
+         ========================= -->
+    <section class="hero" aria-labelledby="heroTitle">
+      <div class="container hero-layout">
+        <div class="hero-content">
+          <div class="hero-badge reveal">
+            <span class="dot" aria-hidden="true"></span>
+            <span data-i18n="hero.badge">Profesjonalne wsparcie w Polsce</span>
+          </div>
+
+          <h1 id="heroTitle" class="reveal" style="--delay:80ms" data-i18n="hero.title">PARTNER OFFICE</h1>
+          <p class="hero-subtitle reveal" style="--delay:150ms" data-i18n="hero.subtitle">Legalizacja pobytu • Księgowość • Kadry i płace</p>
+          <p class="hero-description reveal" style="--delay:220ms" data-i18n="hero.description">Kompleksowa obsługa cudzoziemców, przedsiębiorców i spółek w Polsce.</p>
+
+          <div class="hero-actions reveal" style="--delay:300ms">
+            <a class="btn btn-primary" href="#services">
+              <span data-i18n="hero.primaryButton">Nasze usługi</span>
+              <svg class="icon"><use href="#icon-chevron"></use></svg>
+            </a>
+            <a class="btn btn-secondary" href="#contact">
+              <span data-i18n="hero.secondaryButton">Skontaktuj się</span>
+              <svg class="icon"><use href="#icon-mail"></use></svg>
+            </a>
+          </div>
+
+          <div class="hero-trust reveal" style="--delay:380ms" aria-label="Najważniejsze korzyści">
+            <div class="trust-item">
+              <span class="trust-icon"><svg class="icon"><use href="#icon-shield"></use></svg></span>
+              <strong data-i18n="hero.trust.0">Bezpieczne dokumenty</strong>
+            </div>
+            <div class="trust-item">
+              <span class="trust-icon"><svg class="icon"><use href="#icon-clock"></use></svg></span>
+              <strong data-i18n="hero.trust.1">Terminowa obsługa</strong>
+            </div>
+            <div class="trust-item">
+              <span class="trust-icon"><svg class="icon"><use href="#icon-users"></use></svg></span>
+              <strong data-i18n="hero.trust.2">Indywidualne wsparcie</strong>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-panel reveal" style="--delay:260ms" aria-hidden="true">
+          <div class="business-card">
+            <div class="business-card-top">
+              <div class="business-card-title">
+                <span class="brand-mark">
+                  <svg class="icon"><use href="#icon-briefcase"></use></svg>
+                </span>
+                <div>
+                  <strong data-i18n="hero.card.title">Obsługa firm i cudzoziemców</strong>
+                  <span data-i18n="hero.card.subtitle">Rzeszów • Polska</span>
+                </div>
+              </div>
+
+              <div class="business-visual">
+                <svg viewBox="0 0 420 260" role="img" aria-label="">
+                  <defs>
+                    <linearGradient id="chartGradient" x1="0" x2="1" y1="0" y2="1">
+                      <stop offset="0" stop-color="#14345f"/>
+                      <stop offset="1" stop-color="#c9a34e"/>
+                    </linearGradient>
+                  </defs>
+                  <rect x="20" y="28" width="380" height="205" rx="22" fill="#fff" opacity=".82"/>
+                  <path d="M60 190V82m60 108V58m60 132V112m60 78V76m60 114V45" stroke="#d7e2f2" stroke-width="12" stroke-linecap="round"/>
+                  <path d="M58 168c44-28 66-22 97-52 31-30 52-21 82-7 30 14 56-8 94-52" fill="none" stroke="url(#chartGradient)" stroke-width="9" stroke-linecap="round"/>
+                  <circle cx="58" cy="168" r="10" fill="#14345f"/>
+                  <circle cx="155" cy="116" r="10" fill="#14345f"/>
+                  <circle cx="237" cy="109" r="10" fill="#c9a34e"/>
+                  <circle cx="331" cy="57" r="10" fill="#c9a34e"/>
+                  <rect x="68" y="204" width="92" height="10" rx="5" fill="#cfdbee"/>
+                  <rect x="176" y="204" width="148" height="10" rx="5" fill="#e7edf7"/>
+                  <rect x="68" y="50" width="120" height="12" rx="6" fill="#14345f" opacity=".92"/>
+                </svg>
+              </div>
+
+              <div class="panel-list">
+                <div class="panel-row">
+                  <svg class="icon"><use href="#icon-file"></use></svg>
+                  <div>
+                    <strong data-i18n="hero.panel.0.title">Legalizacja pobytu</strong>
+                    <span data-i18n="hero.panel.0.text">Karty pobytu, dokumenty, obywatelstwo</span>
+                  </div>
+                </div>
+                <div class="panel-row">
+                  <svg class="icon"><use href="#icon-calculator"></use></svg>
+                  <div>
+                    <strong data-i18n="hero.panel.1.title">Księgowość i kadry</strong>
+                    <span data-i18n="hero.panel.1.text">JDG, spółki, ZUS, płace</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="floating-note">
+            <strong data-i18n="hero.note.value">360°</strong>
+            <span data-i18n="hero.note.text">kompleksowa obsługa klienta</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+         ABOUT SECTION
+         ========================= -->
+    <section class="section about" id="about" aria-labelledby="aboutTitle">
+      <div class="container about-grid">
+        <div class="about-card reveal">
+          <div class="about-card-inner">
+            <div class="metric">
+              <span class="metric-icon"><svg class="icon"><use href="#icon-scale"></use></svg></span>
+              <div>
+                <strong data-i18n="about.metrics.0.title">Zaufanie i zgodność</strong>
+                <span data-i18n="about.metrics.0.text">Działamy w oparciu o rzetelność, porządek dokumentów i jasną komunikację.</span>
+              </div>
+            </div>
+            <div class="metric">
+              <span class="metric-icon"><svg class="icon"><use href="#icon-briefcase"></use></svg></span>
+              <div>
+                <strong data-i18n="about.metrics.1.title">Wsparcie biznesu</strong>
+                <span data-i18n="about.metrics.1.text">Pomagamy przy starcie działalności, księgowości i obsłudze pracowników.</span>
+              </div>
+            </div>
+            <div class="metric">
+              <span class="metric-icon"><svg class="icon"><use href="#icon-users"></use></svg></span>
+              <div>
+                <strong data-i18n="about.metrics.2.title">Pomoc cudzoziemcom</strong>
+                <span data-i18n="about.metrics.2.text">Wspieramy klientów w formalnościach związanych z pobytem w Polsce.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-text reveal" style="--delay:120ms">
+          <span class="eyebrow" data-i18n="about.eyebrow">O nas</span>
+          <h2 id="aboutTitle" data-i18n="about.title">Partner w sprawach formalnych i biznesowych</h2>
+          <p data-i18n="about.text">Pomagamy klientom indywidualnym oraz przedsiębiorcom w zakresie legalizacji pobytu, zakładania działalności gospodarczej, księgowości oraz obsługi kadrowo-płacowej. Zapewniamy indywidualne podejście, bezpieczeństwo oraz pełne wsparcie na każdym etapie współpracy.</p>
+          <div class="about-note">
+            <svg class="icon"><use href="#icon-check"></use></svg>
+            <span data-i18n="about.note">Jedna firma — wiele kluczowych formalności.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+         SERVICES SECTION
+         ========================= -->
+    <section class="section services" id="services" aria-labelledby="servicesTitle">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="eyebrow" data-i18n="services.eyebrow">Nasze usługi</span>
+          <h2 id="servicesTitle" data-i18n="services.title">Kompleksowa obsługa w jednym miejscu</h2>
+          <p data-i18n="services.description">Wspieramy klientów w procedurach pobytowych, zakładaniu działalności oraz codziennej obsłudze księgowo-kadrowej.</p>
+        </div>
+
+        <div class="services-grid" id="servicesGrid"></div>
+      </div>
+    </section>
+
+    <!-- =========================
+         WHY US SECTION
+         ========================= -->
+    <section class="section why" id="why" aria-labelledby="whyTitle">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="eyebrow" data-i18n="why.eyebrow">Dlaczego my</span>
+          <h2 id="whyTitle" data-i18n="why.title">Bezpieczna współpraca i jasny proces</h2>
+          <p data-i18n="why.description">Stawiamy na uporządkowane działania, terminowość oraz rozwiązania dopasowane do konkretnej sytuacji klienta.</p>
+        </div>
+
+        <div class="why-grid" id="whyGrid"></div>
+      </div>
+    </section>
+
+    <!-- =========================
+         HIDDEN CONTACT SECTION
+         ========================= -->
+    <section class="section contact" id="contact" aria-labelledby="contactTitle">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="eyebrow" data-i18n="contact.eyebrow">Kontakt</span>
+          <h2 id="contactTitle" data-i18n="contact.title">Porozmawiajmy o Twojej sprawie</h2>
+          <p data-i18n="contact.description">Dane kontaktowe są ukryte do momentu kliknięcia przycisku. Po rozwinięciu możesz od razu zadzwonić lub wysłać wiadomość e-mail.</p>
+        </div>
+
+        <div class="contact-shell reveal" style="--delay:120ms">
+          <button class="contact-toggle" id="contactToggle" type="button" aria-expanded="false" aria-controls="contactPanel">
+            <span data-i18n="contact.showButton">Pokaż dane kontaktowe</span>
+            <svg class="icon chevron"><use href="#icon-chevron"></use></svg>
+          </button>
+
+          <div class="contact-panel" id="contactPanel">
+            <div class="contact-panel-inner">
+              <div class="contact-card">
+                <div class="contact-card-main">
+                  <div class="contact-company">
+                    <span class="brand-mark">
+                      <svg class="icon"><use href="#icon-scale"></use></svg>
+                    </span>
+                    <span data-i18n="contact.company">PARTNER OFFICE</span>
+                  </div>
+
+                  <div class="contact-details">
+                    <div class="contact-detail">
+                      <svg class="icon"><use href="#icon-location"></use></svg>
+                      <div>
+                        <strong data-i18n="contact.addressLabel">Adres</strong>
+                        <span data-i18n-html="contact.address">ul. Jana Matejki 6 lok. 2<br>35-064 Rzeszów</span>
+                      </div>
+                    </div>
+
+                    <div class="contact-detail">
+                      <svg class="icon"><use href="#icon-phone"></use></svg>
+                      <div>
+                        <strong data-i18n="contact.phoneLabel">Telefon</strong>
+                        <a href="tel:+48690982599" data-i18n="contact.phone">+48 690 982 599</a>
+                      </div>
+                    </div>
+
+                    <div class="contact-detail">
+                      <svg class="icon"><use href="#icon-mail"></use></svg>
+                      <div>
+                        <strong data-i18n="contact.emailLabel">E-mail</strong>
+                        <a href="mailto:biuro@partneroffice.com.pl" data-i18n="contact.email">biuro@partneroffice.com.pl</a>
+                      </div>
+                    </div>
+
+                    <div class="contact-detail">
+                      <svg class="icon"><use href="#icon-file"></use></svg>
+                      <div>
+                        <strong data-i18n="contact.identifiersLabel">Dane rejestrowe</strong>
+                        <span data-i18n-html="contact.identifiers">NIP: 9452184109<br>REGON: 522053363</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="contact-actions">
+                    <a class="btn btn-primary" href="tel:+48690982599">
+                      <svg class="icon"><use href="#icon-phone"></use></svg>
+                      <span data-i18n="contact.callButton">Zadzwoń</span>
+                    </a>
+                    <a class="btn btn-outline" href="mailto:biuro@partneroffice.com.pl">
+                      <svg class="icon"><use href="#icon-mail"></use></svg>
+                      <span data-i18n="contact.mailButton">Napisz e-mail</span>
+                    </a>
+                  </div>
+                </div>
+
+                <aside class="contact-card-side" aria-label="Zakres obsługi">
+                  <div>
+                    <h3 data-i18n="contact.sideTitle">Jesteśmy do dyspozycji</h3>
+                    <p data-i18n="contact.sideText">Skontaktuj się, jeżeli potrzebujesz wsparcia w sprawach pobytowych, firmowych, księgowych lub kadrowych.</p>
+                    <div class="contact-mini-list">
+                      <span data-i18n="contact.sideList.0">Legalizacja pobytu</span>
+                      <span data-i18n="contact.sideList.1">Księgowość firm</span>
+                      <span data-i18n="contact.sideList.2">Kadry i płace</span>
+                    </div>
+                  </div>
+                </aside>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =========================
+       FOOTER
+       ========================= -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <strong data-i18n="footer.brand">PARTNER OFFICE</strong>
+      <span data-i18n="footer.services">Legalizacja pobytu | Księgowość | Kadry</span>
+      <span data-i18n="footer.copyright">© 2026</span>
+    </div>
+  </footer>
+
+  <script>
+    /* =========================
+       TRANSLATIONS
+       Add future languages here:
+       translations.ua = {...}
+       translations.en = {...}
+       ========================= */
+    const translations = {
+      pl: {
+        brand: {
+          name: "PARTNER OFFICE",
+          sub: "Business support"
+        },
+        nav: {
+          about: "O nas",
+          services: "Usługi",
+          why: "Dlaczego my",
+          contact: "Kontakt",
+          cta: "Skontaktuj się"
+        },
+        hero: {
+          badge: "Profesjonalne wsparcie w Polsce",
+          title: "PARTNER OFFICE",
+          subtitle: "Legalizacja pobytu • Księgowość • Kadry i płace",
+          description: "Kompleksowa obsługa cudzoziemców, przedsiębiorców i spółek w Polsce.",
+          primaryButton: "Nasze usługi",
+          secondaryButton: "Skontaktuj się",
+          trust: [
+            "Bezpieczne dokumenty",
+            "Terminowa obsługa",
+            "Indywidualne wsparcie"
+          ],
+          card: {
+            title: "Obsługa firm i cudzoziemców",
+            subtitle: "Rzeszów • Polska"
+          },
+          panel: [
+            {
+              title: "Legalizacja pobytu",
+              text: "Karty pobytu, dokumenty, obywatelstwo"
+            },
+            {
+              title: "Księgowość i kadry",
+              text: "JDG, spółki, ZUS, płace"
+            }
+          ],
+          note: {
+            value: "360°",
+            text: "kompleksowa obsługa klienta"
+          }
+        },
+        about: {
+          eyebrow: "O nas",
+          title: "Partner w sprawach formalnych i biznesowych",
+          text: "Pomagamy klientom indywidualnym oraz przedsiębiorcom w zakresie legalizacji pobytu, zakładania działalności gospodarczej, księgowości oraz obsługi kadrowo-płacowej. Zapewniamy indywidualne podejście, bezpieczeństwo oraz pełne wsparcie na każdym etapie współpracy.",
+          note: "Jedna firma — wiele kluczowych formalności.",
+          metrics: [
+            {
+              title: "Zaufanie i zgodność",
+              text: "Działamy w oparciu o rzetelność, porządek dokumentów i jasną komunikację."
+            },
+            {
+              title: "Wsparcie biznesu",
+              text: "Pomagamy przy starcie działalności, księgowości i obsłudze pracowników."
+            },
+            {
+              title: "Pomoc cudzoziemcom",
+              text: "Wspieramy klientów w formalnościach związanych z pobytem w Polsce."
+            }
+          ]
+        },
+        services: {
+          eyebrow: "Nasze usługi",
+          title: "Kompleksowa obsługa w jednym miejscu",
+          description: "Wspieramy klientów w procedurach pobytowych, zakładaniu działalności oraz codziennej obsłudze księgowo-kadrowej.",
+          items: [
+            {
+              icon: "icon-file",
+              title: "LEGALIZACJA POBYTU",
+              list: [
+                "Umiejscowienie zagranicznych aktów stanu cywilnego",
+                "Karta CUKR",
+                "Karta pobytu czasowego",
+                "Karta pobytu stałego",
+                "Rezydent długoterminowy UE",
+                "Obywatelstwo polskie"
+              ]
+            },
+            {
+              icon: "icon-building",
+              title: "ZAKŁADANIE DZIAŁALNOŚCI",
+              list: [
+                "Jednoosobowa działalność gospodarcza (JDG)",
+                "Spółka z o.o."
+              ]
+            },
+            {
+              icon: "icon-calculator",
+              title: "USŁUGI KSIĘGOWE",
+              list: [
+                "Księgowość dla JDG",
+                "Księgowość dla Sp. z o.o.",
+                "Deklaracje i rozliczenia"
+              ]
+            },
+            {
+              icon: "icon-users",
+              title: "KADRY I PŁACE",
+              list: [
+                "Przygotowanie umów",
+                "Naliczanie wynagrodzeń",
+                "Obsługa ZUS",
+                "Dokumentacja pracownicza"
+              ]
+            }
+          ]
+        },
+        why: {
+          eyebrow: "Dlaczego my",
+          title: "Bezpieczna współpraca i jasny proces",
+          description: "Stawiamy na uporządkowane działania, terminowość oraz rozwiązania dopasowane do konkretnej sytuacji klienta.",
+          items: [
+            {
+              icon: "icon-briefcase",
+              title: "Doświadczenie",
+              text: "Praktyczne wsparcie w sprawach pobytowych, firmowych, księgowych oraz kadrowych."
+            },
+            {
+              icon: "icon-clock",
+              title: "Terminowość",
+              text: "Pilnujemy kolejnych etapów, terminów i kompletności dokumentacji."
+            },
+            {
+              icon: "icon-shield",
+              title: "Bezpieczeństwo dokumentów",
+              text: "Dbamy o porządek, poufność i odpowiednie przygotowanie materiałów."
+            },
+            {
+              icon: "icon-users",
+              title: "Indywidualne podejście",
+              text: "Dobieramy zakres obsługi do sytuacji klienta, firmy lub spółki."
+            },
+            {
+              icon: "icon-location",
+              title: "Wsparcie dla cudzoziemców",
+              text: "Pomagamy przejść przez formalności związane z pobytem i działalnością w Polsce."
+            },
+            {
+              icon: "icon-scale",
+              title: "Kompleksowa obsługa",
+              text: "Łączymy legalizację pobytu, księgowość, działalność gospodarczą oraz kadry."
+            }
+          ]
+        },
+        contact: {
+          eyebrow: "Kontakt",
+          title: "Porozmawiajmy o Twojej sprawie",
+          description: "Dane kontaktowe są ukryte do momentu kliknięcia przycisku. Po rozwinięciu możesz od razu zadzwonić lub wysłać wiadomość e-mail.",
+          showButton: "Pokaż dane kontaktowe",
+          hideButton: "Ukryj dane kontaktowe",
+          company: "PARTNER OFFICE",
+          addressLabel: "Adres",
+          address: "ul. Jana Matejki 6 lok. 2<br>35-064 Rzeszów",
+          phoneLabel: "Telefon",
+          phone: "+48 690 982 599",
+          emailLabel: "E-mail",
+          email: "biuro@partneroffice.com.pl",
+          identifiersLabel: "Dane rejestrowe",
+          identifiers: "NIP: 9452184109<br>REGON: 522053363",
+          callButton: "Zadzwoń",
+          mailButton: "Napisz e-mail",
+          sideTitle: "Jesteśmy do dyspozycji",
+          sideText: "Skontaktuj się, jeżeli potrzebujesz wsparcia w sprawach pobytowych, firmowych, księgowych lub kadrowych.",
+          sideList: [
+            "Legalizacja pobytu",
+            "Księgowość firm",
+            "Kadry i płace"
+          ]
+        },
+        footer: {
+          brand: "PARTNER OFFICE",
+          services: "Legalizacja pobytu | Księgowość | Kadry",
+          copyright: "© 2026"
+        }
+      }
+    };
+
+    /* =========================
+       LANGUAGE / TEXT RENDERING
+       ========================= */
+    const currentLanguage = "pl";
+
+    function getTranslation(path, source = translations[currentLanguage]) {
+      return path.split(".").reduce((value, key) => {
+        if (value === undefined || value === null) return undefined;
+        return value[key];
+      }, source);
+    }
+
+    function applyTranslations() {
+      document.documentElement.lang = currentLanguage;
+
+      document.querySelectorAll("[data-i18n]").forEach((element) => {
+        const value = getTranslation(element.dataset.i18n);
+        if (typeof value === "string") {
+          element.textContent = value;
+        }
+      });
+
+      document.querySelectorAll("[data-i18n-html]").forEach((element) => {
+        const value = getTranslation(element.dataset.i18nHtml);
+        if (typeof value === "string") {
+          element.innerHTML = value;
+        }
+      });
+    }
+
+    /* =========================
+       DYNAMIC SERVICES AND WHY CARDS
+       ========================= */
+    function createIcon(symbolId, className = "icon") {
+      return '<svg class="' + className + '" aria-hidden="true"><use href="#' + symbolId + '"></use></svg>';
+    }
+
+    function renderServices() {
+      const servicesGrid = document.getElementById("servicesGrid");
+      const services = translations[currentLanguage].services.items;
+
+      servicesGrid.innerHTML = services.map((service, index) => {
+        const listItems = service.list.map((item) => '<li>' + item + '</li>').join("");
+
+        return `
+          <article class="service-card reveal" style="--delay:${index * 80}ms">
+            <div class="service-icon">${createIcon(service.icon, "icon-lg")}</div>
+            <h3>${service.title}</h3>
+            <ul>${listItems}</ul>
+          </article>
+        `;
+      }).join("");
+    }
+
+    function renderWhyCards() {
+      const whyGrid = document.getElementById("whyGrid");
+      const items = translations[currentLanguage].why.items;
+
+      whyGrid.innerHTML = items.map((item, index) => {
+        return `
+          <article class="why-card reveal" style="--delay:${index * 65}ms">
+            <div class="why-icon">${createIcon(item.icon, "icon")}</div>
+            <div>
+              <h3>${item.title}</h3>
+              <p>${item.text}</p>
+            </div>
+          </article>
+        `;
+      }).join("");
+    }
+
+    /* =========================
+       HEADER AND MOBILE MENU
+       ========================= */
+    function setupNavigation() {
+      const header = document.getElementById("siteHeader");
+      const mobileMenuBtn = document.getElementById("mobileMenuBtn");
+      const navLinks = document.getElementById("navLinks");
+
+      const handleScroll = () => {
+        header.classList.toggle("scrolled", window.scrollY > 24);
+      };
+
+      handleScroll();
+      window.addEventListener("scroll", handleScroll, { passive: true });
+
+      mobileMenuBtn.addEventListener("click", () => {
+        const isOpen = mobileMenuBtn.getAttribute("aria-expanded") === "true";
+        mobileMenuBtn.setAttribute("aria-expanded", String(!isOpen));
+        navLinks.classList.toggle("open", !isOpen);
+        document.body.classList.toggle("menu-open", !isOpen);
+      });
+
+      navLinks.querySelectorAll("a").forEach((link) => {
+        link.addEventListener("click", () => {
+          mobileMenuBtn.setAttribute("aria-expanded", "false");
+          navLinks.classList.remove("open");
+          document.body.classList.remove("menu-open");
+        });
+      });
+    }
+
+    /* =========================
+       HIDDEN CONTACT CARD
+       ========================= */
+    function setupContactReveal() {
+      const contactToggle = document.getElementById("contactToggle");
+      const contactPanel = document.getElementById("contactPanel");
+      const buttonText = contactToggle.querySelector("[data-i18n]");
+
+      contactToggle.addEventListener("click", () => {
+        const isOpen = contactToggle.getAttribute("aria-expanded") === "true";
+        contactToggle.setAttribute("aria-expanded", String(!isOpen));
+        contactPanel.classList.toggle("open", !isOpen);
+        buttonText.textContent = !isOpen
+          ? translations[currentLanguage].contact.hideButton
+          : translations[currentLanguage].contact.showButton;
+      });
+    }
+
+    /* =========================
+       SCROLL REVEAL ANIMATIONS
+       ========================= */
+    function setupRevealAnimations() {
+      const revealElements = document.querySelectorAll(".reveal");
+
+      if (!("IntersectionObserver" in window)) {
+        revealElements.forEach((element) => element.classList.add("visible"));
+        return;
+      }
+
+      const observer = new IntersectionObserver((entries, currentObserver) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+            currentObserver.unobserve(entry.target);
+          }
+        });
+      }, {
+        threshold: 0.14,
+        rootMargin: "0px 0px -30px 0px"
+      });
+
+      revealElements.forEach((element) => observer.observe(element));
+    }
+
+    /* =========================
+       INITIALIZATION
+       ========================= */
+    document.addEventListener("DOMContentLoaded", () => {
+      applyTranslations();
+      renderServices();
+      renderWhyCards();
+      setupNavigation();
+      setupContactReveal();
+      setupRevealAnimations();
+    });
+  </script>
+</body>
+</html>
